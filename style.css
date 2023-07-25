@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+
+:root {
+    --transition: all 0.5s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Serif 4', serif;
+
+
+
+}
+
+
+header {
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    /* right: 0; */
+    background: linear-gradient(#2196f3, #e0f7fa);
+
+}
+
+nav {
+    display: flex;
+    /* color: white; */
+    background-color: #7343d84d;
+    justify-content: space-around;
+}
+
+
+.right ul {
+    display: flex;
+
+
+}
+
+ul li {
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+ul li a:hover {
+    background-color: #633abb4d;
+    color: #000000;
+}
+
+/* AboutSection */
+
+.first-section {
+    padding: 50px 0;
+    display: flex;
+    margin: 100px 10px;
+    justify-content: space-around;
+
+
+}
+
+
+.first {
+
+    /* border: 2px solid black; */
+    flex-basis: 500px;
+
+}
+
+.left>div {
+    font-size: xx-large;
+}
+
+.left button {
+    margin-right: 20px;
+}
+
+.right>img {
+    margin: 0 25%;
+
+
+}
+
+/* About Image */
+.profile>img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Section Three  Skills*/
+
+.container-skills {
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 180px);
+    grid-auto-rows: auto;
+    margin: 0 23%;
+
+}
+
+.container-skills .skills {
+    border: 2px solid rgb(144, 141, 141);
+
+
+}
+
+.last {
+    grid-column: span 2;
+}
+
+.skills {
+
+    border-radius: 15px;
+    transition: 0.4s ease;
+
+}
+
+.skills:hover {
+    box-shadow: 0 0 2rem #2196f3;
+
+}
+
+
+
+.skills h5 {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+
+
+
+/* Contact */
+
+.social-icons {
+    width: 350px;
+    margin: 40px auto 0 auto;
+    padding-bottom: 30px;
+}
+
+.social-icons ul a {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.social-icons ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons ul a:hover {
+    background: linear-gradient(#21c2f3, #e0f7fa);
+    border-color: rgb(226, 240, 135);
+}
